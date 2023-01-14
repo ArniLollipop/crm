@@ -4,11 +4,12 @@ import LeftArrow from './../icons/LeftArrow'
 
 function Header(props) {
   const btnClass = "w-[130px] font-bold text-center py-2 bg-red-100"
+  const arrowClass = "w-fit absolute -top-5 left-3"
   return (
     <div className="bg-gray-300 w-full p-3">
       <div className='container mx-auto flex items-center'>
-        <div className='w-[30%]'>
-          <Link to='/' className={props.arrow}>
+        <div className='w-[30%] relative'>
+          <Link to='/' className={props.arrow + ' ' + arrowClass}>
             <LeftArrow/>
           </Link>
         </div>

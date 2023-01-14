@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -11,9 +12,9 @@ function Login() {
         <label className=''>
           <input type= "password" placeholder='Введите ваш пароль' id = "email" className='outline-none text-white placeholder:text-white bg-transparent mt-5 w-full border-2 border-white rounded-xl p-3 h-fit mx-auto'/>
         </label>
-        <button className='px-4 py-2 bg-white rounded-xl mt-5 font-semibold mx-auto w-fit block hover:shadow-sm transition-all duration-300'>
+        <Link to='/' className='px-4 py-2 bg-white rounded-xl mt-5 font-semibold mx-auto w-fit block hover:shadow-sm transition-all duration-300'>
           Войти
-        </button>
+        </Link>
       </div>
     </div>
   );
